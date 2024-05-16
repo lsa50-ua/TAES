@@ -1,0 +1,70 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  body {
+    /* background: url('/images/fondoMaster.jpg'); */
+    font-family: Helvetica;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  
+  table.games {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  
+  
+  table.games th {
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  table.games td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  table.games tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+.menu {
+    background-color: #8BC34A;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.square {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+.square img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
